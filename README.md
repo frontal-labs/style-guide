@@ -1,4 +1,6 @@
-# @frontal/style-guide
+<img src="https://res.cloudinary.com/dun4i32pe/image/upload/v1761040261/b_1589x396_gu4we9.jpg" />
+
+# Frontal Style-Guide
 
 This repository is the home of Frontal's style guide, which includes configs for popular linting and styling tools.
 
