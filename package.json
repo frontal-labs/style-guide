@@ -1,0 +1,17 @@
+{
+  "name": "@frontal/style-guide",
+  "description": "Frontal's engineering style guide",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "clean": "git clean -xdf .cache .turbo dist node_modules"
+  },
+  "files": ["biome.json", "README.md"],
+  "exports": {
+    "./biome": "./biome.json"
+  },
+  "keywords": ["style", "guide", "format", "linter"],
+  "peerDependencies": {
+    "@biomejs/biome": "^1.9.4"
+  }
+}
