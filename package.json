@@ -6,9 +6,9 @@
   "scripts": {
     "clean": "git clean -xdf .cache .turbo dist node_modules"
   },
-  "files": ["biome.json", "README.md"],
+  "files": ["biome.jsonc", "README.md"],
   "exports": {
-    "./biome": "./biome.json"
+    "./biome": "./biome.jsonc"
   },
   "keywords": ["style", "guide", "format", "linter"],
   "peerDependencies": {
