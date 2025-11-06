@@ -8,10 +8,19 @@
   },
   "files": ["biome.jsonc", "README.md"],
   "exports": {
-    "./biome": "./biome.jsonc"
+    "./angular": "./config/angular/biome.jsonc",
+    "./astro": "./config/astro/biome.jsonc",
+    "./core": "./config/core/biome.jsonc",
+    "./next": "./config/next/biome.jsonc",
+    "./qwik": "./config/qwik/biome.jsonc",
+    "./react": "./config/react/biome.jsonc",
+    "./remix": "./config/remix/biome.jsonc",
+    "./solid": "./config/solid/biome.jsonc",
+    "./svelte": "./config/svelte/biome.jsonc",
+    "./vue": "./config/vue/biome.jsonc"
   },
   "keywords": ["style", "guide", "format", "linter"],
-  "peerDependencies": {
-    "@biomejs/biome": "^1.9.4"
+  "dependencies": {
+    "@biomejs/biome": "2.3.4"
   }
 }
