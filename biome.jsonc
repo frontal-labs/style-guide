@@ -12,8 +12,5 @@
         "noConsole": "off"
       }
     }
-  },
-  "files": {
-    "include": ["**/*"]
   }
 }
