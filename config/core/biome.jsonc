@@ -618,6 +618,7 @@
         "**/coverage/**/*",
         "**/*.min.js",
         "**/*.min.css",
+        "**/*.css",
         "**/*.md",
         "**/*.mdx",
         "**/*.graphql",
