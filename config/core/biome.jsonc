@@ -1,9 +1,8 @@
 {
-  "root": false,
   "$schema": "../../node_modules/@biomejs/biome/configuration_schema.json",
   "files": {
     "ignoreUnknown": true,
-    "includes": [
+    "include": [
       "**/*",
       "!**/_generated/**/*",
       "!**/*.gen.*",
@@ -82,7 +81,6 @@
         "noHeaderScope": "error",
         "noInteractiveElementToNoninteractiveRole": "error",
         "noLabelWithoutControl": "error",
-        "noNoninteractiveElementInteractions": "error",
         "noNoninteractiveElementToInteractiveRole": "error",
         "noNoninteractiveTabindex": "error",
         "noPositiveTabindex": "error",

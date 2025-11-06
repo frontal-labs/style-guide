@@ -1,26 +1,13 @@
 {
-  "root": false,
   "$schema": "../../node_modules/@biomejs/biome/configuration_schema.json",
   "linter": {
     "rules": {
-      "nursery": {
-        "noNextAsyncClientComponent": "error"
-      },
-      "performance": {
-        "noImgElement": "error"
-      },
-      "style": {
-        "noHeadElement": "error"
-      },
-      "suspicious": {
-        "noDocumentImportInPage": "error",
-        "noHeadImportInDocument": "error"
-      }
+      "suspicious": {}
     }
   },
   "overrides": [
     {
-      "includes": ["next.config.*"],
+      "include": ["next.config.*"],
       "linter": {
         "rules": {
           "suspicious": {
