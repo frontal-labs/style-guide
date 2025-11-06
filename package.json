@@ -10,6 +10,7 @@
   "exports": {
     "./angular": "./config/angular/biome.jsonc",
     "./astro": "./config/astro/biome.jsonc",
+    "./biome": "./biome.jsonc",
     "./core": "./config/core/biome.jsonc",
     "./next": "./config/next/biome.jsonc",
     "./qwik": "./config/qwik/biome.jsonc",

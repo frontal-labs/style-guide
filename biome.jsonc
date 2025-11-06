@@ -4,13 +4,6 @@
     "./config/core/biome.jsonc",
     "./config/react/biome.jsonc",
     "./config/next/biome.jsonc"
-  ],
-  "linter": {
-    "rules": {
-      "suspicious": {
-        // Needed for CLI
-        "noConsole": "off"
-      }
-    }
-  }
+  ]
 }
+
