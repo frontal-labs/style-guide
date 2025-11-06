@@ -2,7 +2,7 @@
   "$schema": "../../node_modules/@biomejs/biome/configuration_schema.json",
   "files": {
     "ignoreUnknown": true,
-    "include": [
+    "includes": [
       "**/*",
       "!**/_generated/**/*",
       "!**/*.gen.*",
@@ -43,8 +43,7 @@
       "!**/.expo-shared/**/*",
       "!**/android/build/**/*",
       "!**/ios/build/**/*",
-      "!**/DerivedData/**/*",
-      "!**/*.css"
+      "!**/DerivedData/**/*"
     ]
   },
   "formatter": {
@@ -618,7 +617,6 @@
         "**/coverage/**/*",
         "**/*.min.js",
         "**/*.min.css",
-        "**/*.css",
         "**/*.md",
         "**/*.mdx",
         "**/*.graphql",
