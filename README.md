@@ -109,6 +109,18 @@ pnpm lint:fix
 pnpm format
 ```
 
+## Releases
+
+This package uses [Changesets](https://github.com/changesets/changesets) for versioning. The workflow is:
+
+1. Run `pnpm changeset` to document each change (one changeset file per change).
+2. Open a pull request with the new changeset(s).
+3. When the automated **Release** PR is merged into `main`, the `Release` GitHub Action:
+   - runs `pnpm changeset version` to bump package versions and changelogs,
+   - tags the commit and creates a GitHub Release via `pnpm run release`.
+
+> ℹ️ We do **not** publish to npm; releases are tracked via git tags and GitHub Releases only.
+
 ## License
 
 This package is private and proprietary to Frontal Labs. See [LICENSE.md](./LICENSE.md) for details.
