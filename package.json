@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "git clean -xdf -- node_modules .next .turbo .cache dist",
     "changeset": "changeset",
-    "release": "changeset tag && changeset github-release"
+    "release": "changeset tag"
   },
   "files": [
     "biome.jsonc",

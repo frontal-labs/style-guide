@@ -117,7 +117,7 @@ This package uses [Changesets](https://github.com/changesets/changesets) for ver
 2. Open a pull request with the new changeset(s).
 3. When the automated **Release** PR is merged into `main`, the `Release` GitHub Action:
    - runs `pnpm changeset version` to bump package versions and changelogs,
-   - tags the commit and creates a GitHub Release via `pnpm run release`.
+   - creates a git tag via `pnpm run release` (which runs `changeset tag`) and automatically opens a GitHub Release entry (no npm publish).
 
 > ℹ️ We do **not** publish to npm; releases are tracked via git tags and GitHub Releases only.
 
