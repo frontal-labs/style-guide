@@ -44,6 +44,44 @@ The Biome configuration includes:
 - Import sorting
 - And other best practices for consistent code style
 
+## Rust (rustfmt + Clippy)
+
+We ship native configs you can drop directly into your repo:
+
+- `@frontal/style-guide/rust` → `rustfmt.toml`
+- `@frontal/style-guide/rust/Clippy.toml` → `Clippy.toml`
+
+```sh
+cp node_modules/@frontal/style-guide/config/rust/rustfmt.toml ./rustfmt.toml
+cp node_modules/@frontal/style-guide/config/rust/Clippy.toml ./Clippy.toml
+```
+
+These files lock in edition `2021`, grouped imports, doc formatting, and strict Clippy lint levels (warn: `pedantic`, `nursery`; deny: unwrap/expect/todo).
+
+## Python (Ruff)
+
+Use the Ruff-native config exposed at `@frontal/style-guide/python`:
+
+```sh
+cp node_modules/@frontal/style-guide/config/python/ruff.toml ./ruff.toml
+```
+
+It targets Python 3.12, enforces a 100-character line length, enables Ruff formatting, and selects the `E`, `F`, `I`, `UP`, `B`, `DTZ`, `PL`, and `RUF` rule groups (with `E203`/`E501` ignored for Black compatibility). Tests relax `S101`.
+
+## Go (gofmt + golangci-lint)
+
+The Go lint profile lives at `@frontal/style-guide/go/golangci.yml`:
+
+```sh
+cp node_modules/@frontal/style-guide/config/go/golangci.yml ./.golangci.yml
+```
+
+It enables `govet`, `staticcheck`, `errcheck`, `gosimple`, `unused`, `goconst`, `gocyclo`, and `revive` with tuned thresholds. Run gofmt with the stock command to enforce canonical formatting:
+
+```sh
+gofmt -s -w .
+```
+
 ## Development
 
 ### Building
