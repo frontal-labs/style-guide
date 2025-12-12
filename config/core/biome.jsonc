@@ -248,12 +248,7 @@
         "useBlockStatements": "error",
         "useCollapsedElseIf": "error",
         "useConsistentArrayType": "error",
-        "useConsistentBuiltinInstantiation": {
-          "level": "error",
-          "options": {
-            "style": "type"
-          }
-        },
+        "useConsistentBuiltinInstantiation": "error",
         "useConst": "error",
         "useDefaultParameterLast": "error",
         "useDefaultSwitchClause": "error",
@@ -269,7 +264,6 @@
         },
         "useForOf": "error",
         "useFragmentSyntax": "error",
-        "useGroupedAccessorPairs": "error",
         "useImportType": "error",
         "useLiteralEnumMembers": "error",
         "useNodeAssertStrict": "error",
