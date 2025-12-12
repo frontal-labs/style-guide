@@ -56,7 +56,7 @@
     "attributePosition": "auto",
     "bracketSpacing": true
   },
-  "assist": {
+  "assists": {
     "actions": {
       "source": {
         // Provides a code action to sort the imports and exports in the file using a built-in or custom order.
@@ -86,13 +86,11 @@
         "noPositiveTabindex": "error",
         "noRedundantAlt": "error",
         "noRedundantRoles": "error",
-        "noStaticElementInteractions": "error",
         "noSvgWithoutTitle": "error",
         "useAltText": "error",
         "useAnchorContent": "error",
         "useAriaActivedescendantWithTabindex": "error",
         "useAriaPropsForRole": "error",
-        "useAriaPropsSupportedByRole": "error",
         "useButtonType": "error",
         "useFocusableInteractive": "error",
         "useHeadingContent": "error",
@@ -106,7 +104,6 @@
         "useValidAriaProps": "error",
         "useValidAriaRole": "error",
         "useValidAriaValues": "error",
-        "useValidAutocomplete": "error",
         "useValidLang": "error",
 
         "noAutofocus": "off",
@@ -117,29 +114,22 @@
       "complexity": {
         /** ------------------------ JavaScript Rules ------------------------ **/
 
-        "noAdjacentSpacesInRegex": "error",
-        "noArguments": "error",
         "noBannedTypes": "error",
-        "noCommaOperator": "error",
         "noEmptyTypeParameters": "error",
         "noExcessiveCognitiveComplexity": "error",
         "noExcessiveNestedTestSuites": "error",
         "noExtraBooleanCast": "error",
-        "noFlatMapIdentity": "error",
         "noForEach": "error",
         "noStaticOnlyClass": "error",
         "noThisInStatic": "error",
         "noUselessCatch": "error",
         "noUselessConstructor": "error",
-        "noUselessContinue": "error",
         "noUselessEmptyExport": "error",
-        "noUselessEscapeInRegex": "error",
         "noUselessFragments": "error",
         "noUselessLabel": "error",
         "noUselessLoneBlockStatements": "error",
         "noUselessRename": "error",
         "noUselessStringConcat": "error",
-        "noUselessStringRaw": "error",
         "noUselessSwitchCase": "error",
         "noUselessTernary": "error",
         "noUselessThisAlias": "error",
@@ -149,20 +139,13 @@
         "useArrowFunction": "error",
         "useDateNow": "error",
         "useFlatMap": "error",
-        "useIndexOf": "error",
         "useLiteralKeys": "error",
-        "useNumericLiterals": "error",
         "useOptionalChain": "error",
         "useRegexLiterals": "error",
         "useSimpleNumberKeys": "error",
         "useSimplifiedLogicExpression": "error",
-        "useWhile": "error",
-
-        "noExcessiveLinesPerFunction": "off",
-        "noImplicitCoercions": "off",
 
         /** ------------------------ CSS Rules ------------------------ **/
-        "noImportantStyles": "off"
       },
       "correctness": {
         /** ------------------------ JavaScript Rules ------------------------ **/
@@ -173,7 +156,6 @@
         "noConstructorReturn": "error",
         "noEmptyCharacterClassInRegex": "error",
         "noEmptyPattern": "error",
-        "noGlobalDirnameFilename": "error",
         "noGlobalObjectCalls": "error",
         "noInnerDeclarations": "error",
         "noInvalidBuiltinInstantiation": "error",
@@ -181,7 +163,6 @@
         "noInvalidUseBeforeDeclaration": "error",
         "noNonoctalDecimalEscape": "error",
         "noPrecisionLoss": "error",
-        "noRestrictedElements": "error",
         "noSelfAssign": "error",
         "noSetterReturn": "error",
         "noStringCaseMismatch": "error",
@@ -200,7 +181,6 @@
         "noUnusedPrivateClassMembers": "error",
         "noUnusedVariables": "error",
         "noVoidTypeReturn": "error",
-        "useGraphqlNamedOperations": "error",
         "useImageSize": "error",
         "useIsNan": "error",
         "useParseIntRadix": "error",
@@ -498,7 +478,7 @@
     }
   },
   "json": {
-    "assist": {
+    "assists": {
       "enabled": false
     },
     "formatter": {
