@@ -248,7 +248,7 @@
         "useBlockStatements": "error",
         "useCollapsedElseIf": "error",
         "useConsistentArrayType": "error",
-        "useConsistentBuiltinInstantiation": "error",
+        "useConsistentBuiltinInstantiation": {
           "level": "error",
           "options": {
             "style": "type"
