@@ -379,6 +379,7 @@
       "allowTrailingCommas": false
     }
   },
+  "html": {
     "formatter": {
       "enabled": true
     }
