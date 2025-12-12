@@ -4,12 +4,6 @@
   "overrides": [
     {
       "include": ["**/*.astro"],
-      "html": {
-        "experimentalFullSupportEnabled": true,
-        "formatter": {
-          "indentScriptAndStyle": true
-        }
-      },
       "linter": {
         "rules": {
           "correctness": {

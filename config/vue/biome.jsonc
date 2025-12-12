@@ -4,12 +4,6 @@
   "overrides": [
     {
       "include": ["**/*.vue"],
-      "html": {
-        "experimentalFullSupportEnabled": true,
-        "formatter": {
-          "indentScriptAndStyle": true
-        }
-      },
       "linter": {
         "rules": {
           "nursery": {
