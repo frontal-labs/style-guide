@@ -1,9 +1,14 @@
 {
-	"root": false,
-	"$schema": "../../node_modules/@biomejs/biome/configuration_schema.json",
-	"html": {
-		"parser": {
-			"interpolation": true
-		}
-	}
+  "$schema": "../../node_modules/@biomejs/biome/configuration_schema.json",
+  "extends": ["../core/biome.jsonc"],
+  "overrides": [
+    {
+      "include": ["**/*.html"],
+      "html": {
+        "parser": {
+          "interpolation": true
+        }
+      }
+    }
+  ]
 }

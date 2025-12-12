@@ -2,7 +2,7 @@
   "$schema": "../../node_modules/@biomejs/biome/configuration_schema.json",
   "files": {
     "ignoreUnknown": true,
-    "includes": [
+    "include": [
       "**/*",
       "!**/_generated/**/*",
       "!**/*.gen.*",
@@ -528,7 +528,7 @@
   "overrides": [
     {
       // Configuration files that often need default exports
-      "includes": [
+      "include": [
         "*.config.{js,ts,mjs,cjs,mts,cts}",
         "vite.config.*",
         "vitest.config.*",
@@ -555,7 +555,7 @@
     },
     {
       // Test files
-      "includes": ["**/*.{test,spec}.{ts,tsx,js,jsx}", "**/__tests__/**/*"],
+      "include": ["**/*.{test,spec}.{ts,tsx,js,jsx}", "**/__tests__/**/*"],
       "linter": {
         "rules": {
           "complexity": {
@@ -570,7 +570,7 @@
     },
     {
       // Scripts and CLI tools
-      "includes": ["**/scripts/**/*", "**/bin/**/*", "*.mjs", "*.cjs"],
+      "include": ["**/scripts/**/*", "**/bin/**/*", "*.mjs", "*.cjs"],
       "linter": {
         "rules": {
           "suspicious": {
@@ -584,7 +584,7 @@
     },
     {
       // Storybook files
-      "includes": ["**/*.{stories,story}.{ts,tsx,js,jsx}"],
+      "include": ["**/*.{stories,story}.{ts,tsx,js,jsx}"],
       "linter": {
         "rules": {
           "correctness": {
@@ -596,7 +596,7 @@
     },
     {
       // Environment and type definition files
-      "includes": ["**/*.d.ts", "**/{env,global,types}.d.ts"],
+      "include": ["**/*.d.ts", "**/{env,global,types}.d.ts"],
       "linter": {
         "rules": {
           "correctness": {
@@ -608,7 +608,7 @@
     },
     {
       // Files that should not be processed (build output, generated files, non-JS files)
-      "includes": [
+      "include": [
         "**/dist/**/*",
         "**/build/**/*",
         "**/.next/**/*",
@@ -633,7 +633,7 @@
     },
     {
       // Package.json and similar JSON config files
-      "includes": [
+      "include": [
         "package.json",
         "{tsconfig,jsconfig}.json",
         "tsconfig.*.json",
