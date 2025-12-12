@@ -139,7 +139,7 @@
         "useOptionalChain": "error",
         "useRegexLiterals": "error",
         "useSimpleNumberKeys": "error",
-        "useSimplifiedLogicExpression": "error",
+        "useSimplifiedLogicExpression": "error"
 
         /** ------------------------ CSS Rules ------------------------ **/
       },
@@ -198,7 +198,6 @@
         "noUnmatchableAnbSelector": "error"
       },
       "nursery": {
-
         "useExplicitType": "off",
         "useSortedClasses": {
           "fix": "safe",
@@ -207,7 +206,7 @@
             "attributes": ["className"],
             "functions": ["clsx", "cva", "tw", "twMerge", "cn", "twJoin", "tv"]
           }
-        },
+        }
 
         /** ------ Project rules use Scanner and are too slow (https://biomejs.dev/linter/domains/#project-rules) ------ **/
       },
@@ -226,8 +225,7 @@
 
         "noDangerouslySetInnerHtml": "error",
         "noDangerouslySetInnerHtmlWithChildren": "error",
-        "noGlobalEval": "error",
-
+        "noGlobalEval": "error"
       },
       "style": {
         /** ------------------------ JavaScript Rules ------------------------ **/
@@ -275,32 +273,21 @@
         "useTemplate": "error",
         "useThrowNewError": "error",
         "useThrowOnlyError": "error",
-        "useUnifiedTypeSignatures": "error",
 
-        "noCommonJs": "off",
         "noDefaultExport": "off",
         "noImplicitBoolean": "off",
-        "noProcessEnv": "off",
-        "useComponentExportOnlyModules": "off",
-        "useConsistentCurlyBraces": "off",
         "useExplicitLengthCheck": "off",
-        "useExportsLast": "off",
         "useNamingConvention": "off",
-        "useSingleVarDeclarator": "off",
+        "useSingleVarDeclarator": "off"
 
         /** ------------------------ CSS Rules ------------------------ **/
-        "noDescendingSpecificity": "error",
-        "noValueAtRule": "error"
       },
       "suspicious": {
         /** ------------------------ JavaScript Rules ------------------------ **/
 
-        "noAlert": "error",
         "noApproximativeNumericConstant": "error",
         "noAssignInExpressions": "error",
         "noAsyncPromiseExecutor": "error",
-        "noBiomeFirstException": "error",
-        "noBitwiseOperators": "error",
         "noCatchAssign": "error",
         "noClassAssign": "error",
         "noCommentText": "error",
@@ -308,16 +295,12 @@
         "noConfusingLabels": "error",
         "noConfusingVoidType": "error",
         "noConsole": "error",
-        "noConstantBinaryExpressions": "error",
         "noConstEnum": "error",
         "noControlCharactersInRegex": "error",
         "noDebugger": "error",
-        "noDocumentCookie": "error",
         "noDoubleEquals": "error",
         "noDuplicateCase": "error",
         "noDuplicateClassMembers": "error",
-        "noDuplicateElseIf": "error",
-        "noDuplicateFields": "error",
         "noDuplicateObjectKeys": "error",
         "noDuplicateParameters": "error",
         "noDuplicateTestHooks": "error",
@@ -335,24 +318,19 @@
         "noGlobalIsNan": "error",
         "noImplicitAnyLet": "error",
         "noImportAssign": "error",
-        "noIrregularWhitespace": "error",
         "noLabelVar": "error",
         "noMisleadingCharacterClass": "error",
         "noMisleadingInstantiator": "error",
         "noMisplacedAssertion": "error",
         "noMisrefactoredShorthandAssign": "error",
-        "noOctalEscape": "error",
         "noPrototypeBuiltins": "error",
-        "noQuickfixBiome": "error",
         "noRedeclare": "error",
         "noRedundantUseStrict": "error",
         "noSelfCompare": "error",
         "noShadowRestrictedNames": "error",
         "noSkippedTests": "error",
         "noSparseArray": "error",
-        "noTemplateCurlyInString": "error",
         "noThenProperty": "error",
-        "noTsIgnore": "error",
         "noUnassignedVariables": "error",
         "noUnsafeDeclarationMerging": "error",
         "noUnsafeNegation": "error",
@@ -490,9 +468,7 @@
           "suspicious": {
             "noConsole": "off"
           },
-          "style": {
-            "noProcessEnv": "off"
-          }
+          "style": {}
         }
       }
     },
