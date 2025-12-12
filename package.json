@@ -1,0 +1,48 @@
+{
+  "name": "@frontal/style-guide",
+  "description": "Frontal's engineering style guide",
+  "version": "0.0.3",
+  "private": true,
+  "scripts": {
+    "clean": "git clean -xdf -- node_modules .next .turbo .cache dist",
+    "changeset": "changeset",
+    "release": "changeset tag"
+  },
+  "files": [
+    "biome.jsonc",
+    "README.md",
+    "config"
+  ],
+  "exports": {
+    "./angular": "./config/angular/biome.jsonc",
+    "./astro": "./config/astro/biome.jsonc",
+    "./biome": "./biome.jsonc",
+    "./core": "./config/core/biome.jsonc",
+    "./go": "./config/go/golangci.yml",
+    "./go/*": "./config/go/*",
+    "./next": "./config/next/biome.jsonc",
+    "./python": "./config/python/ruff.toml",
+    "./python/*": "./config/python/*",
+    "./qwik": "./config/qwik/biome.jsonc",
+    "./react": "./config/react/biome.jsonc",
+    "./remix": "./config/remix/biome.jsonc",
+    "./rust": "./config/rust/rustfmt.toml",
+    "./rust/*": "./config/rust/*",
+    "./solid": "./config/solid/biome.jsonc",
+    "./svelte": "./config/svelte/biome.jsonc",
+    "./vue": "./config/vue/biome.jsonc"
+  },
+  "keywords": [
+    "style",
+    "guide",
+    "format",
+    "linter"
+  ],
+  "dependencies": {
+    "@biomejs/biome": "2.3.4"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.5.0",
+    "@changesets/cli": "^2.27.7"
+  }
+}
