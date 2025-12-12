@@ -337,15 +337,7 @@
         "useGetterReturn": "error",
         "useIsArray": "error",
         "useNamespaceKeyword": "error",
-        "useNumberToFixedDigitsArgument": "error",
-
-        /** ------------------------ CSS Rules ------------------------ **/
-        "noDuplicateAtImportRules": "error",
-        "noDuplicateFontNames": "error",
-        "noDuplicateSelectorsKeyframeBlock": "error",
-        "noEmptyBlock": "error",
-        "noImportantInKeyframe": "error",
-        "noShorthandPropertyOverrides": "error",
+        "useNumberToFixedDigitsArgument": "error"
       }
     }
   },
