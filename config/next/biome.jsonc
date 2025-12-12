@@ -4,10 +4,8 @@
   "linter": {
     "rules": {
       "nursery": {
-        "noNextAsyncClientComponent": "error"
       },
       "performance": {
-        "noImgElement": "error"
       },
       "style": {
         "noHeadElement": "error"
