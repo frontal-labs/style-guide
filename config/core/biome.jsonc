@@ -199,8 +199,6 @@
       },
       "nursery": {
 
-        "noUselessCatchBinding": "off",
-        "noUnnecessaryConditions": "off",
         "useExplicitType": "off",
         "useSortedClasses": {
           "fix": "safe",
@@ -212,12 +210,6 @@
         },
 
         /** ------ Project rules use Scanner and are too slow (https://biomejs.dev/linter/domains/#project-rules) ------ **/
-        "noDeprecatedImports": "off",
-        "noFloatingPromises": "off",
-        "noMisusedPromises": "off",
-        "noUnresolvedImports": "off",
-        "noImportCycles": "off",
-        "useExhaustiveSwitchCases": "off"
       },
       "performance": {
         /** ------------------------ JavaScript Rules ------------------------ **/
@@ -225,41 +217,29 @@
         "noAccumulatingSpread": "error",
         "noBarrelFile": "error",
         "noDelete": "error",
-        "noDynamicNamespaceImportAccess": "error",
-        "noNamespaceImport": "error",
-        "noUnwantedPolyfillio": "error",
-        "useGoogleFontPreconnect": "error",
         "useTopLevelRegex": "error",
 
-        "noAwaitInLoops": "off",
         "noReExportAll": "off"
       },
       "security": {
         /** ------------------------ JavaScript Rules ------------------------ **/
 
-        "noBlankTarget": "error",
         "noDangerouslySetInnerHtml": "error",
         "noDangerouslySetInnerHtmlWithChildren": "error",
         "noGlobalEval": "error",
 
-        "noSecrets": "off"
       },
       "style": {
         /** ------------------------ JavaScript Rules ------------------------ **/
 
         "noDoneCallback": "error",
-        "noEnum": "error",
-        "noExportedImports": "error",
         "noInferrableTypes": "error",
-        "noMagicNumbers": "error",
         "noNamespace": "error",
         "noNegationElse": "error",
-        "noNestedTernary": "error",
         "noNonNullAssertion": "error",
         "noParameterAssign": "error",
         "noParameterProperties": "error",
         "noRestrictedGlobals": "error",
-        "noRestrictedImports": "error",
         "noRestrictedTypes": "error",
         "noShoutyConstants": "error",
         "noSubstr": "error",
