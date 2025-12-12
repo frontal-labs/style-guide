@@ -5,8 +5,6 @@
     "rules": {
       "correctness": {
         "noChildrenProp": "error",
-        "noNestedComponentDefinitions": "error",
-        "noReactPropAssignments": "error",
         "noRenderReturnValue": "error",
         "noVoidElementsWithChildren": "error",
         "useExhaustiveDependencies": "error",

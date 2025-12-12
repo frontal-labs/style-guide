@@ -3,16 +3,11 @@
   "extends": ["../core/biome.jsonc"],
   "linter": {
     "rules": {
-      "nursery": {
-      },
-      "performance": {
-      },
+      "nursery": {},
+      "performance": {},
       "style": {
-        "noHeadElement": "error"
       },
       "suspicious": {
-        "noDocumentImportInPage": "error",
-        "noHeadImportInDocument": "error"
       }
     }
   },

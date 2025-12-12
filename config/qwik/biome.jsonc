@@ -4,15 +4,11 @@
   "linter": {
     "rules": {
       "nursery": {
-        "useQwikValidLexicalScope": "error",
-        "useQwikMethodUsage": "error"
       },
       "suspicious": {
         "noReactSpecificProps": "error"
       },
       "correctness": {
-        "noQwikUseVisibleTask": "error",
-        "useQwikClasslist": "error"
       }
     }
   }
