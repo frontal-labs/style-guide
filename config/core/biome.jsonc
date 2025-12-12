@@ -198,8 +198,6 @@
         "noUnmatchableAnbSelector": "error"
       },
       "nursery": {
-        "useExplicitType": "off",
-        "useSortedClasses": {
           "fix": "safe",
           "level": "error",
           "options": {

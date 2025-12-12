@@ -3,13 +3,11 @@
   "extends": ["../core/biome.jsonc"],
   "linter": {
     "rules": {
-      "nursery": {
-      },
+      "nursery": {},
       "suspicious": {
         "noReactSpecificProps": "error"
       },
-      "correctness": {
-      }
+      "correctness": {}
     }
   }
 }

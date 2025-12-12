@@ -5,10 +5,8 @@
     "rules": {
       "nursery": {},
       "performance": {},
-      "style": {
-      },
-      "suspicious": {
-      }
+      "style": {},
+      "suspicious": {}
     }
   },
   "overrides": [
