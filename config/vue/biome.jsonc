@@ -7,6 +7,11 @@
       "linter": {
         "rules": {
           "nursery": {
+            "noVueDataObjectDeclaration": "error",
+            "noVueDuplicateKeys": "error",
+            "noVueReservedKeys": "error",
+            "noVueReservedProps": "error",
+            "useVueMultiWordComponentNames": "error"
           },
           "correctness": {
             "noUnusedVariables": "off",

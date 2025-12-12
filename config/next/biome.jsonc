@@ -3,10 +3,19 @@
   "extends": ["../core/biome.jsonc"],
   "linter": {
     "rules": {
-      "nursery": {},
-      "performance": {},
-      "style": {},
-      "suspicious": {}
+      "nursery": {
+        "noNextAsyncClientComponent": "error"
+      },
+      "performance": {
+        "noImgElement": "error"
+      },
+      "style": {
+        "noHeadElement": "error"
+      },
+      "suspicious": {
+        "noDocumentImportInPage": "error",
+        "noHeadImportInDocument": "error"
+      }
     }
   },
   "overrides": [

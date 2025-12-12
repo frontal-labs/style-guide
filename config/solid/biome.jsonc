@@ -4,8 +4,10 @@
   "linter": {
     "rules": {
       "correctness": {
+        "noSolidDestructuredProps": "error"
       },
       "performance": {
+        "useSolidForComponent": "error"
       },
       "suspicious": {
         "noReactSpecificProps": "error"

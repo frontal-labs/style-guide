@@ -5,6 +5,8 @@
     "rules": {
       "correctness": {
         "noChildrenProp": "error",
+        "noNestedComponentDefinitions": "error",
+        "noReactPropAssignments": "error",
         "noRenderReturnValue": "error",
         "noVoidElementsWithChildren": "error",
         "useExhaustiveDependencies": "error",
@@ -12,6 +14,7 @@
         "useJsxKeyInIterable": "error"
       },
       "nursery": {
+        "noReactForwardRef": "error"
       },
       "suspicious": {
         "noArrayIndexKey": "error",
@@ -21,6 +24,7 @@
         "noReactSpecificProps": "off"
       },
       "style": {
+        "useReactFunctionComponents": "error"
       }
     }
   }
