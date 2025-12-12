@@ -59,10 +59,6 @@
   "assists": {
     "actions": {
       "source": {
-        // Provides a code action to sort the imports and exports in the file using a built-in or custom order.
-        "organizeImports": "on",
-        // Enforce attribute sorting in JSX elements.
-        "useSortedAttributes": "on",
         // Enforce ordering of a JS object properties.
         "useSortedKeys": "off"
       }
@@ -181,7 +177,6 @@
         "noUnusedPrivateClassMembers": "error",
         "noUnusedVariables": "error",
         "noVoidTypeReturn": "error",
-        "useImageSize": "error",
         "useIsNan": "error",
         "useParseIntRadix": "error",
         "useSingleJsDocAsterisk": "error",
