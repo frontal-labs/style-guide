@@ -12,7 +12,6 @@
         "useJsxKeyInIterable": "error"
       },
       "nursery": {
-        "noReactForwardRef": "error"
       },
       "suspicious": {
         "noArrayIndexKey": "error",
@@ -22,7 +21,6 @@
         "noReactSpecificProps": "off"
       },
       "style": {
-        "useReactFunctionComponents": "error"
       }
     }
   }
