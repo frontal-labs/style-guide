@@ -1,5 +1,13 @@
 # @frontal/style-guide
 
+## 0.0.4
+
+### Patch Changes
+
+- [`82bb27a`](https://github.com/frontal-labs/style-guide/commit/82bb27a59a67c0639fffacc46ffd789974f21e8f) Thanks [@gabrielvfonseca](https://github.com/gabrielvfonseca)! - Ensure the release workflow installs dependencies without a lockfile and adds
+  the shared setup-node composite action so GitHub Actions can create Changeset
+  tags reliably.
+
 ## 0.0.3
 
 ### Patch Changes
