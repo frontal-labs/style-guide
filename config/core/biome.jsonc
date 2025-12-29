@@ -1,8 +1,9 @@
 {
+  "root": false,
   "$schema": "../../node_modules/@biomejs/biome/configuration_schema.json",
   "files": {
     "ignoreUnknown": true,
-    "include": [
+    "includes": [
       "**/*",
       "!**/_generated/**/*",
       "!**/*.gen.*",
@@ -56,7 +57,7 @@
     "attributePosition": "auto",
     "bracketSpacing": true
   },
-  "assists": {
+  "assist": {
     "actions": {
       "source": {
         // Enforce ordering of a JS object properties.
@@ -69,7 +70,6 @@
     "rules": {
       "a11y": {
         /** ------------------------ JavaScript Rules ------------------------ **/
-
         "noAccessKey": "error",
         "noAriaHiddenOnFocusable": "error",
         "noAriaUnsupportedElements": "error",
@@ -101,15 +101,12 @@
         "useValidAriaRole": "error",
         "useValidAriaValues": "error",
         "useValidLang": "error",
-
         "noAutofocus": "off",
-
         /** ------------------------ CSS Rules ------------------------ **/
         "useGenericFontNames": "error"
       },
       "complexity": {
         /** ------------------------ JavaScript Rules ------------------------ **/
-
         "noBannedTypes": "error",
         "noEmptyTypeParameters": "error",
         "noExcessiveCognitiveComplexity": "error",
@@ -140,12 +137,10 @@
         "useRegexLiterals": "error",
         "useSimpleNumberKeys": "error",
         "useSimplifiedLogicExpression": "error"
-
         /** ------------------------ CSS Rules ------------------------ **/
       },
       "correctness": {
         /** ------------------------ JavaScript Rules ------------------------ **/
-
         "noConstantCondition": "error",
         "noConstantMathMinMaxClamp": "error",
         "noConstAssign": "error",
@@ -180,13 +175,10 @@
         "useIsNan": "error",
         "useValidForDirection": "error",
         "useYield": "error",
-
         "noNodejsModules": "off",
         "noUndeclaredDependencies": "off",
         "useImportExtensions": "off",
-
         /** ------ Project rules use Scanner and are too slow (https://biomejs.dev/linter/domains/#project-rules) ------ **/
-
         /** ------------------------ CSS Rules ------------------------ **/
         "noInvalidDirectionInLinearGradient": "error",
         "noInvalidGridAreas": "error",
@@ -198,36 +190,30 @@
         "noUnmatchableAnbSelector": "error"
       },
       "nursery": {
-          "fix": "safe",
+        "useSortedClasses": {
           "level": "error",
           "options": {
             "attributes": ["className"],
             "functions": ["clsx", "cva", "tw", "twMerge", "cn", "twJoin", "tv"]
           }
         }
-
-        /** ------ Project rules use Scanner and are too slow (https://biomejs.dev/linter/domains/#project-rules) ------ **/
       },
       "performance": {
         /** ------------------------ JavaScript Rules ------------------------ **/
-
         "noAccumulatingSpread": "error",
         "noBarrelFile": "error",
         "noDelete": "error",
         "useTopLevelRegex": "error",
-
         "noReExportAll": "off"
       },
       "security": {
         /** ------------------------ JavaScript Rules ------------------------ **/
-
         "noDangerouslySetInnerHtml": "error",
         "noDangerouslySetInnerHtmlWithChildren": "error",
         "noGlobalEval": "error"
       },
       "style": {
         /** ------------------------ JavaScript Rules ------------------------ **/
-
         "noDoneCallback": "error",
         "noInferrableTypes": "error",
         "noNamespace": "error",
@@ -271,18 +257,15 @@
         "useTemplate": "error",
         "useThrowNewError": "error",
         "useThrowOnlyError": "error",
-
         "noDefaultExport": "off",
         "noImplicitBoolean": "off",
         "useExplicitLengthCheck": "off",
         "useNamingConvention": "off",
         "useSingleVarDeclarator": "off"
-
         /** ------------------------ CSS Rules ------------------------ **/
       },
       "suspicious": {
         /** ------------------------ JavaScript Rules ------------------------ **/
-
         "noApproximativeNumericConstant": "error",
         "noAssignInExpressions": "error",
         "noAsyncPromiseExecutor": "error",
@@ -358,12 +341,11 @@
       "quoteStyle": "double"
     },
     "parser": {
-      "allowWrongLineComments": false,
-      "cssModules": false,
+      "allowWrongLineComments": false
     }
   },
   "json": {
-    "assists": {
+    "assist": {
       "enabled": false
     },
     "formatter": {
@@ -393,7 +375,7 @@
   "overrides": [
     {
       // Configuration files that often need default exports
-      "include": [
+      "includes": [
         "*.config.{js,ts,mjs,cjs,mts,cts}",
         "vite.config.*",
         "vitest.config.*",
@@ -420,7 +402,7 @@
     },
     {
       // Test files
-      "include": ["**/*.{test,spec}.{ts,tsx,js,jsx}", "**/__tests__/**/*"],
+      "includes": ["**/*.{test,spec}.{ts,tsx,js,jsx}", "**/__tests__/**/*"],
       "linter": {
         "rules": {
           "complexity": {
@@ -435,7 +417,7 @@
     },
     {
       // Scripts and CLI tools
-      "include": ["**/scripts/**/*", "**/bin/**/*", "*.mjs", "*.cjs"],
+      "includes": ["**/scripts/**/*", "**/bin/**/*", "*.mjs", "*.cjs"],
       "linter": {
         "rules": {
           "suspicious": {
@@ -447,7 +429,7 @@
     },
     {
       // Storybook files
-      "include": ["**/*.{stories,story}.{ts,tsx,js,jsx}"],
+      "includes": ["**/*.{stories,story}.{ts,tsx,js,jsx}"],
       "linter": {
         "rules": {
           "correctness": {
@@ -459,7 +441,7 @@
     },
     {
       // Environment and type definition files
-      "include": ["**/*.d.ts", "**/{env,global,types}.d.ts"],
+      "includes": ["**/*.d.ts", "**/{env,global,types}.d.ts"],
       "linter": {
         "rules": {
           "correctness": {
@@ -471,7 +453,7 @@
     },
     {
       // Files that should not be processed (build output, generated files, non-JS files)
-      "include": [
+      "includes": [
         "**/dist/**/*",
         "**/build/**/*",
         "**/.next/**/*",
@@ -496,7 +478,7 @@
     },
     {
       // Package.json and similar JSON config files
-      "include": [
+      "includes": [
         "package.json",
         "{tsconfig,jsconfig}.json",
         "tsconfig.*.json",
