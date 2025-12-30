@@ -1,21 +1,6 @@
 {
-    "name": "@frontal/style-guide",
-    "description": "Frontal's engineering style guide",
-    "repository": "https://github.com/frontal-labs/style-guide",
-    "homepage": "https://frontal.dev",
-    "author": {
-        "name": "Frontal Labs, Inc.",
-        "email": "hello@frontal.dev",
-        "url": "https://frontal.dev"
-    },
-    "license": "SEE LICENSE IN LICENSE.md",
-    "keywords": [
-        "style",
-        "guide",
-        "format",
-        "linter",
-        "biome",
-        "eslint",
-        "prettier"
-    ]
+  "name": "style-guide",
+  "description": "Frontal's engineering style guide and shared configurations",
+  "tags": ["style", "guide", "lint", "format", "config"],
+  "type": "config"
 }
