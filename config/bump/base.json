@@ -1,0 +1,6 @@
+{
+    "commitMessage": "chore: bump version to ${version}",
+    "files": [
+        "package.json"
+    ]
+}

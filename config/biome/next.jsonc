@@ -1,7 +1,7 @@
 {
   "root": false,
   "$schema": "../../node_modules/@biomejs/biome/configuration_schema.json",
-  "extends": ["../../config/core/biome.jsonc"],
+  "extends": ["./core.jsonc"],
   "linter": {
     "rules": {
       "nursery": {

@@ -1,0 +1,12 @@
+{
+    "commitMessage": "chore: release v${version}",
+    "tagName": "v${version}",
+    "hooks": {
+        "before:init": [
+            "bun run build"
+        ],
+        "after:bump": [
+            "bun run build"
+        ]
+    }
+}

@@ -1,12 +1,19 @@
 {
   "root": false,
   "$schema": "../../node_modules/@biomejs/biome/configuration_schema.json",
-  "extends": ["../../config/core/biome.jsonc"],
+  "extends": ["./core.jsonc"],
   "overrides": [
     {
-      "includes": ["**/*.astro"],
+      "includes": ["**/*.vue"],
       "linter": {
         "rules": {
+          "nursery": {
+            "noVueDataObjectDeclaration": "error",
+            "noVueDuplicateKeys": "error",
+            "noVueReservedKeys": "error",
+            "noVueReservedProps": "error",
+            "useVueMultiWordComponentNames": "error"
+          },
           "correctness": {
             "noUnusedVariables": "off",
             "noUnusedImports": "off"
